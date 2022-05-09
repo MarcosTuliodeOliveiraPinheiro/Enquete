@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/tacsite.ico">
+    <title>Enquete</title>
+    <style type="text/css">
+        .enquete{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #FFEA00;
+            color: white;
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            left: 500px;
+            text-align: center;
+            font-size: 35px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .botao1{
+            cursor: pointer;
+            position: relative;
+            left: 500px;
+            bottom: -50px;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            background-color: #42FA26;
+            border: 2px rgb(77, 71, 71);
+            border-style: double;
+            border-radius: 6px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            z-index: 1;
+        }
+        .botao1:hover{
+            background-color: #B2FF59
+            
+        }
+        .sim:active{
+            background-color: #B2FF59;
+            transform: translateY(4px);
+    }
+
+    .botao2{
+            cursor: pointer;
+            position: relative;
+            left: 650px;
+            bottom: -50px;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #D50000;
+            border: 2px rgb(63, 61, 61);
+            border-style: double;
+            border-radius: 6px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            z-index: 1;
+        }
+        .botao2:hover{
+            background-color: #C62828
+            
+        }
+        .nao:active{
+            background-color: #EF5350;
+            transform: translateY(4px);
+    }
+
+    .resultado{
+        margin-top: 2px;
+        position: relative;
+        bottom: -80px;
+        left: 540px;
+        width: 100px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(4, 55, 88, 0.712);
+    }
+
+    #all{
+        background-color: #42FA26;
+        width: 10px;
+        text-align: center;
+        color: white;
+    }
+    #aln{
+        background-color: #D50000;
+        width: 10px;
+        text-align: center;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="circle"> Você prefere: viajar com os amigos ou viajar sozinho(a)?</div>
+    <button class="botao1" type="button" onclick="cmamgpi()">Com Amigos</button>
+    <button class="botao2" type="button" onclick="sznpi()">Sozinho</button>
+    <div class="resultado"> <b>Resultado:</b></div>
+    <div class="resultado" id="ComAmigos"> <b>Com Amigos</b> </div>
+    <div class="resultado" id="all">0</div>
+    <div class="resultado" id="Sozinho"> <b>Sozinho</b> </div>
+    <div class="resultado" id="aln">0</div>   
+    <script src="script.js"></script> 
+</body>
+</html>
